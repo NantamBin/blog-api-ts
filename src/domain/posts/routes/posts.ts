@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import postController from '../../comments/controllers/postController';
+import postController from '../controllers/postController';
 const postRouter = Router();
 postRouter.get('/posts', postController.getAllPosts);
 postRouter.get('/posts/:id', postController.getPost);
